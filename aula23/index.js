@@ -22,4 +22,4 @@ console.log(vaiExecutar && falaOi());
 
 const corUsuario = 'verde'
 const corPadrao = corUsuario || 'preto'
-console.log(corPadrao );
+console.log(corPadrao);
