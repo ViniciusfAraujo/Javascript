@@ -53,11 +53,13 @@ form button:hover{
     background: var(--primary2-color);
 }
 
-.paragrafo-resultado .bad{
+.paragrafo-resultado{
     background-color: #1f9b1b;
-    padding: 10px 10px;
+    padding: 5px 10px;
 }
 
 .bad{
-    background: #dd0c0c;
+    background: #ca2424;
+    color: white;
+    padding: 5px 10px;
 }
