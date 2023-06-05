@@ -25,6 +25,7 @@ form.addEventListener('submit', function(e){
     setResultado(msg, true);
 });
 
+//Função que vai chegar o nivel do IMC
 function getNivelImc(imc){
     const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade grau 1', 'Obesidade grau 2', 'Obesidade grau 3' ];
 
@@ -37,16 +38,19 @@ function getNivelImc(imc){
     
 }
 
+//Função que faz o calculo IMC
 function getImc(peso, altura){
     const imc = (peso / (altura ** 2));
     return imc.toFixed(2);
 }
 
+//Função que so cria um paragrafo
 function criaP(){
     const p = document.createElement('p')
     return p;
 }
 
+//Função que reseta o resultado
 function setResultado(msg, isValid){
     const resultado = document.querySelector('#resultado')
     resultado.innerHTML =''
