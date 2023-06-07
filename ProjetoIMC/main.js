@@ -6,7 +6,7 @@ form.addEventListener('submit', function(e){
     const inputPeso = e.target.querySelector('#peso');
     const inputAltura = e.target.querySelector('#altura');
 
-    const peso = Number(inputPeso.value); //problemas por aqui
+    const peso = Number(inputPeso.value); 
     const altura = Number(inputAltura.value);
     
     if(!peso){
@@ -25,7 +25,7 @@ form.addEventListener('submit', function(e){
     setResultado(msg, true);
 });
 
-//Função que vai chegar o nivel do IMC
+//Função que vai checkar o nivel do IMC
 function getNivelImc(imc){
     const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade grau 1', 'Obesidade grau 2', 'Obesidade grau 3' ];
 
