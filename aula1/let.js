@@ -6,8 +6,7 @@
 //Case-sensitive
 //Nao podemos redeclarar variaveis com let
 
-let nome; //declarou a varialvel
-nome = 'Qualquer valor' //inicializou a varialvel
-console.log(nome);
-nome = 'vinicius'
-console.log(nome);
+let nome = "Vinicius"
+console.log(`Meu nome é ${nome}. Estou aprendendo JavaScript`);
+console.log('Meu nome é "vinicius". Estou aprendendo JavaScript ás');
+

@@ -33,4 +33,4 @@ let inicio = 1
 do{
     console.log(inicio);
     inicio++
-}while(inicio <= 20)
+}while(inicio <= 10)

@@ -1,3 +1,4 @@
+//O laço for...in interage sobre propriedades enumeradas de um objeto, na ordem original de inserção. O laço pode ser executado para cada propriedade distinta do objeto.
 //                0       1       2
 const frutas = ['uva', 'pera', 'morango']
 

@@ -1,3 +1,5 @@
+//O loop for...of percorre objetos iterativos (en-US) (incluindo Array, Map, Set, o objeto arguments (en-US) e assim por diante), chamando uma função personalizada com instruções a serem executadas para o valor de cada objeto distinto.
+
 const nome = ['Vinicius', 'Ferreira', 'Araujo',]
 
 for(let i = 0; i < nome.length; i++){

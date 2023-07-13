@@ -1,5 +1,5 @@
-let nome = "Vinicius"
+let num1 = Number(window.prompt('Digite o primeiro numero'));
+let num2 = Number(window.prompt('Digite o segundo numero'));
 
-console.log(`Meu nome é ${nome}. Estou aprendendo JavaScript ás 9 da manha`);
-
-console.log('Meu nome é "vinicius". Estou aprendendo JavaScript ás', 9, 'da manha');
+let resultado = num1 + num2
+alert(`O resultado foi: ${resultado}`)

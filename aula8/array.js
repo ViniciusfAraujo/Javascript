@@ -1,16 +1,16 @@
 const aluno = ['Vinicius', 'Milena', 'Jose']
 
-aluno.splice(1, 0, 'Carlos');
+aluno.splice(1, 0, 'Carlos'); //O método splice() altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.
 console.log(aluno)
 
 
-console.log(typeof aluno);
-console.log(aluno instanceof Array);
+console.log(typeof aluno); //O operador typeof retorna uma string indicando o tipo de um operando.
+console.log(aluno instanceof Array); //O operador instanceof testa se um objeto tem, em seu prototype, a função construtora.
 
 
+aluno.push('gabriel') //O método push() adiciona um ou mais elementos ao final de um array e retorna o novo comprimento desse array.
+aluno.push('Maria')
 
-aluno.push('gabriel')
-aluno.push('luiza')
 
 console.log(aluno.slice(0, 3)); // fatiar o elemento
 
