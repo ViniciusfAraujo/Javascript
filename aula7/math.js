@@ -10,3 +10,12 @@ console.log(Math.random()); //gera uma sequencia de numeros aleatorios entre 0. 
 console.log(num2);
 console.log(num3);
 console.log(num4);
+
+console.log('--------------------------------------');
+function numAleatorio(min, max){
+    const aleatorio = parseInt(Math.random() * (max - min) + min)
+    return(
+        aleatorio
+    )
+}
+console.log(numAleatorio(1, 10));
