@@ -31,3 +31,7 @@ aluno[3] = 'Ana Paula' //ndice 3 criado com o valor ana paula, contento mais um 
 console.log(aluno);
 console.log(aluno[0]);
 console.log(aluno[2]);
+
+//* Comentario Importante
+//!Isso esta errado, não ultilizar
+//?Estou com duvida nesse codigo
