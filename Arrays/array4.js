@@ -1,4 +1,6 @@
-
+/*
+O map()método chama uma função de retorno de chamada em cada elemento de uma matriz e retorna uma nova matriz que contém os resultados.
+*/ 
 const numeros = [50,10,3,6,2,7,9,11,33,22,67,17]
 const dobro = numeros.map(valor => valor * 2)
 console.log(dobro);

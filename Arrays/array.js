@@ -1,4 +1,6 @@
 //Revisão de ARRAY
+//Uma ARRAY é uma variável especial, que pode conter mais de um valor:
+//Uma matriz pode conter muitos valores sob um único nome e você pode acessar os valores referindo-se a um número de índice.
 const nome = ['Vinicius', 'Milena', 'Ana']
 nome[2] = 'Jose'
 //delete nome[1] 
