@@ -22,7 +22,7 @@ const p2 = {
     preco: 15
 }
 Object.setPrototypeOf(p2, Produto.prototype)
-p2.aumento(10)
+p2.aumento(15)
 console.log(p2);
 
 console.log('---------------------------------------');

@@ -13,6 +13,10 @@ Pessoa.prototype.nomeCompleto = function(){
 const pessoa1 = new Pessoa('Vinicius', 'Ferreira')
 const pessoa2 = new Pessoa('Milena', 'França')
 
+console.log(pessoa1.nomeCompleto());
+
 console.log(pessoa1);
 console.log(pessoa2);
+
+
 

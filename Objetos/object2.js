@@ -17,7 +17,7 @@ console.log(Object.values(object2));
 
 console.log('-------------------------------');
 
-//Object.assign(des, any) método estático copia todas as propriedades próprias enumeráveis​​de um ou mais objetos de origem para um objeto de destino.
+//Object.assign(des, any) método estático copia todas as propriedades próprias enumeráveis​​ de um ou mais objetos de origem para um objeto de destino.
 const target = {a:1, b:2}
 const source = { b:4, c:5}
 

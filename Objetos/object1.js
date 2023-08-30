@@ -50,10 +50,13 @@ function criaProduto(nome){
     }
 }
 
-//const p1 = new Produto('camiseta', 20, 3)
-//console.log(p1);
-//p1.estoque = 'Qualquer coisa!'
-//console.log(p1.estoque);
+const p1 = new Produto('camiseta', 20, 3)
+console.log(p1);
+p1.estoque = 30
+console.log(p1.estoque);
+
+console.log('-----------------------');
+
 const p2 = criaProduto('camiseta')
 p2.nome = 'Qualquer coisa'
 console.log(p2.nome);
