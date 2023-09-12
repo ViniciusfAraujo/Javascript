@@ -1,9 +1,11 @@
 // Criando classes
 /*
 Classes em JavaScript são introduzidas no ECMAScript 2015 e são simplificações da linguagem para as heranças baseadas nos protótipos. A sintaxe para classes não introduz um novo modelo de herança de orientação a objetos em JavaScript.
+
+Uma classe é um conjunto de características e comportamentos que definem o conjunto de objetos pertencentes à essa classe. Repare que a classe em si é um conceito abstrato, como um molde, que se torna concreto e palpável através da criação de um objeto. Chamamos essa criação de instanciação da classe, como se estivéssemos usando esse molde (classe) para criar um objeto.
 */ 
 
-//*Linguagens verdadeiramente de POO não realizam a prototipação em segundo plano - anote isso em algum lugar.
+//*Linguagens verdadeiramente de POO não realizam a prototipação em segundo plano.
 
 class Pessoa {
     constructor(nome, sobrenome){
