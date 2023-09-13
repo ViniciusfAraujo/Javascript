@@ -10,3 +10,8 @@ let nome = "Vinicius"
 console.log(`Meu nome é ${nome}. Estou aprendendo JavaScript`);
 console.log('Meu nome é "vinicius". Estou aprendendo JavaScript ás');
 
+console.log('1'+2+3);
+
+function print(){
+    var c = 5
+}
