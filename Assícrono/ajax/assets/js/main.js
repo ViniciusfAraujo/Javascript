@@ -1,3 +1,4 @@
+/*
 const request = obj => {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
@@ -13,6 +14,7 @@ const request = obj => {
     });
   });
 };
+*/
 
 document.addEventListener('click', e => {
   const el = e.target;
@@ -25,17 +27,14 @@ document.addEventListener('click', e => {
 });
 
 async function carregaPagina(el) {
-  const href = el.getAttribute('href');
 
-  const objConfig = {
-    method: 'GET',
-    url: href
-  };
-
-  try {
-    const response = await request(objConfig);
-    carregaResultado(response);
-  } catch(e) {
+  try{
+    const href = el.getAttribute('href');
+    const response = await fetch(href)
+    if(response.status !== 200) throw new Error('ERRO 404!')
+    const html = await response.text()
+    carregaResultado(html)
+  }catch(e){
     console.log(e);
   }
 }
