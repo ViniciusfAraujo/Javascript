@@ -15,3 +15,6 @@ console.log('1'+2+3);
 function print(){
     var c = 5
 }
+
+let idade = 55
+console.log(idade);
