@@ -1,2 +1,2 @@
 # javascript
- Curso de JavaScript básico
+ Curso de JavaScript básico ao avançado.

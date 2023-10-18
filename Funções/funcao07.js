@@ -59,8 +59,9 @@ function criaPessoa1(nome, sobrenome, a, p) {
   const p4 = criaPessoa1('João', 'Otávio', 1.90, 57);
   const p5 = criaPessoa1('Junior', 'Otávio', 1.5, 110);
   
-  console.log(p3.imc);
+  console.log(p3.fala());
   console.log(p4.imc);
   console.log(p5.imc);
+
 
 

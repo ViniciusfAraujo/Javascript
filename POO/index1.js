@@ -30,7 +30,7 @@ class Carro{
 
 const car1 = new Carro('Fusca')
 car1.velocidade = 99
-console.log(car1.velocidade);
+console.log(car1);
 
 
 console.log('-----------------------');
