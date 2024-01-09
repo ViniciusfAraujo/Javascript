@@ -26,7 +26,7 @@ console.log('---------------------------------');
 
 
 const nome1 = ['Vinicius', 'Milena', 'Ana','Eduardo', 'Melissa', 'Gabriel']
-const novo1 = nome1.slice(1, -1)
+const novo1 = nome1.slice(1, -1) // Método extrai uma parte de uma string e a retorna como uma substring. O slice()método possui dois parâmetros opcionais starte end
 
 console.log(novo1);
 
@@ -34,5 +34,5 @@ console.log('---------------------------------');
 
 
 const nome2 = 'Vinicius Ferreira de Araujo'
-const nomess = nome2.split(' ')
+const nomess = nome2.split(' ') //O split()divide uma string em uma matriz de substrings.
 console.log(nomess);

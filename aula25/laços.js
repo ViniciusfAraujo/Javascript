@@ -10,6 +10,7 @@ for(let i = 1; i <= 5; i++){
 }
 */
 
+console.log('-----------------');
 
 // 2.while
 let i = 5
@@ -28,6 +29,7 @@ while(cont <= 5){
     cont++
 }
 
+console.log('-----------------');
 
 // 3. dow.hile
 let b = 0
@@ -37,6 +39,7 @@ do{
 } while(b <= 5)
 
 
+console.log('-----------------');
 
 // 4. for.in
 const pessoa = {
@@ -52,5 +55,6 @@ for(let indice in cores){
     console.log(indice,cores[indice]);
 }
 
+console.log('-----------------');
 
 // 5. for.of

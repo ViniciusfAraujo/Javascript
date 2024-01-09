@@ -27,7 +27,7 @@ const pessoas = [
 const pessoas2 = pessoas.filter(obj => obj.nome.length > 5)
 console.log(pessoas2);
 
-const pessoaIdade = pessoas.filter(obj => obj.idade > 19)
+const pessoaIdade = pessoas.filter(obj => obj.idade >= 19)
 console.log(pessoaIdade);
 
 const pessoaA = pessoas.filter(obj => obj.nome.toLowerCase().endsWith('a'))

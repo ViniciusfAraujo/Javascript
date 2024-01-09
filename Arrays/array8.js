@@ -1,3 +1,5 @@
+const e = require("express");
+
 const daysOfWeek = [
     'Sunday',
     'Monday',
@@ -12,7 +14,11 @@ for(let i = 0; i < daysOfWeek.length; i++){
     console.log(daysOfWeek[i]);
 }
 
+console.log('----------------------------');
 
+daysOfWeek.forEach(function(e){
+    console.log(e);
+})
 //---------------------
 const fibonacci = []
 fibonacci[1] = 1
