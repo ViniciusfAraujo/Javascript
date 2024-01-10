@@ -1,50 +1,73 @@
-function partition(values, left, right) {
-  const pivot = values[left];
-  let i = left;
+// quickSort função principal que será chamada para ordenar um array.
+// Ela recebe o array a ser ordenado e uma função de comparação opcional (padrão é defaultCompare).
+// Chama a função auxiliar quick com os parâmetros iniciais.
+function quickSort(array, compareFn = defaultCompare){
+  return quick(array, 0, array.length - 1, compareFn);
+}
 
-  for (let j = left + 1; j <= right; j++) {
-      if (values[j] <= pivot) {
-          i++;
-          swap(values, i, j);
-      }
+
+// quick é a função auxiliar responsável pela lógica de ordenação rápida (quick sort) recursiva.
+// Verifica se há mais de um elemento no array para ordenar.
+// Chama a função particao para obter o índice do pivô.
+// Recursivamente chama a função quick para as sub-arrays à esquerda e à direita do pivô.
+function quick(array, left, right, compareFn){
+  let index;
+  if (array.length > 1){
+    index = particao(array, left, right, compareFn);
+
+    if (left < index - 1){
+      quick(array, left, index - 1, compareFn);
+    }
+    if (index < right){
+      quick(array, index, right, compareFn);
+    }
   }
+  return array;
+}
 
-  // Troca o pivot (values[left]) com i.
-  swap(values, left, i);
 
+// particao realiza a partição do array com base em um pivô.
+// O pivô é escolhido como o elemento no meio do array.
+// Utiliza dois índices (i e j) para percorrer o array, movendo-os em direção ao centro.
+// Troca elementos quando necessário para garantir que os elementos menores que o pivô estejam à esquerda e os maiores à direita.
+function particao(array, left, right, compareFn){
+  const pivot = array[Math.floor((left + right) / 2)];
+  let i = left;
+  let j = right;
+
+  while (i <= j){
+    while (compareFn(array[i], pivot) === Compare.LESS_THAN){
+      i++;
+    }
+    while (compareFn(array[j], pivot) === Compare.BIGGER_THAN){
+      j--;
+    }
+    if (i <= j){
+      swap(array, i, j);
+      i++;
+      j--;
+    }
+  }
   return i;
 }
 
-function swap(arr, i, j) {
-  const temp = arr[i];
-  arr[i] = arr[j];
-  arr[j] = temp;
+// defaultCompare é uma função de comparação padrão. Ela compara dois elementos e retorna um valor indicando se são iguais, se o primeiro é menor ou se o primeiro é maior.
+// Compare é uma enumeração usada para representar os resultados de comparação.
+function defaultCompare(a, b) {
+  return a === b ? Compare.EQUAL : (a < b ? Compare.LESS_THAN : Compare.BIGGER_THAN);
 }
 
-// Exemplo de uso:
-const arr = [3, 6, 2, 8, 5, 1];
-const left = 0;
-const right = arr.length - 1;
-const pivotIndex = partition(arr, left, right);
-console.log(arr); // O array estará parcialmente ordenado em relação ao pivot
-console.log(`O índice do pivot é ${pivotIndex}`);
+const Compare = {
+  LESS_THAN: -1,
+  EQUAL: 0,
+  BIGGER_THAN: 1,
+};
 
-console.log('<----------------------->');
+// Função para trocar elementos de posição no array
+function swap(array, a, b){
+  const temp = array[a];
+  array[a] = array[b];
+  array[b] = temp;
+}
 
-// function quickSort(values, left, right) {
-//   if (left < right) {
-//       const indexPivot = partition(values, left, right);
-//       quickSort(values, left, indexPivot - 1);
-//       quickSort(values, indexPivot + 1, right);
-//   }
-// }
-
-// // A função partition (já fornecida na resposta anterior) deve estar definida neste código.
-
-// // Exemplo de uso:
-// // const arr = [3, 6, 2, 8, 5, 1];
-// // const left = 0;
-// // const right = arr.length - 1;
-
-// quickSort(arr, left, right);
-// //console.log(arr); // O array estará ordenado
+console.log(quickSort([3, 5, 1, 6, 4, 7, 2]));
